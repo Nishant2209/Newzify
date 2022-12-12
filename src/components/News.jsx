@@ -164,11 +164,16 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-5">
-        <h1 className="text-center text-white my-5" style={{ fontWeight:"bold"}}>Top Headlines of India</h1>
+        <h1
+          className="text-center text-white my-5"
+          style={{ fontWeight: "bold" }}
+        >
+          Top Headlines of India
+        </h1>
         {this.state.loading && <Spinner />}
         <div className="row" style={{ rowGap: "50px" }}>
           {!this.state.loading &&
-            this.state.articles.map((element) => {
+            this.state.articles?.map((element) => {
               return (
                 <div className="col-md-4" key={element.url}>
                   <NewsItem
