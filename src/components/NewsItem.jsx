@@ -5,9 +5,9 @@ export class NewsItem extends Component {
     let { title, description, imageUrl, newsUrl, author, publishedAt, source } =
       this.props;
     return (
-      <div>
+      <div className="d-flex justify-content-center">
         <div
-          className="card bg-black text-white border border-white border-3"
+          className="card bg-black text-white"
           style={{ height: "33rem", width: "20rem" }}
         >
           <img
@@ -20,15 +20,22 @@ export class NewsItem extends Component {
             alt="Not Found"
           />
           <div className="card-body">
-            <h5 className="card-title">{title}....</h5>
-            <p className="card-text">{description}....</p>
+            <h5
+              className="card-title"
+              style={{ fontSize: "1.4rem", fontWeight: "bold" }}
+            >
+              {title}....
+            </h5>
+            <p className="card-text" style={{ fontSize: "0.85rem" }}>
+              {description}....
+            </p>
             <p class="card-text">
-              <small class="text-warning">
+              <small class="text-warning" style={{ fontSize: "0.85rem" }}>
                 By {author ? author : "Unknown"} on{" "}
                 {new Date(publishedAt).toGMTString()}
               </small>
             </p>
-            <p class="card-text">
+            <p class="card-text" style={{ fontSize: "0.85rem" }}>
               <small class="text-warning">Source: {source}</small>
             </p>
             <a
