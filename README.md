@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# <p align="center">Newzify</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Newzify is a news fetching web app that fetches the news from a free api - [Newsapi](https://newsapi.org/) and displays it on the screen. This app also has 7 different categories so one can fetch news of different genres by just clicking on the categories. This only supports 100 fetches per day and also it cannot be hosted on any platform because the apikey is for developer use only which has its limitations and supports only local hosting.
+
+## Tech Stack Used
+- HTML
+- CSS 
+- JavaScript
+- ReactJS
+- Bootstrap
+
+## Prerequisite to run the project in your desktop
+It is recommended that your laptop should have the following specifications in order to run this project:
+- NodeJs
+- npm 
+- Visual Studio Code (or any other IDE)
 
 ## Available Scripts
 
@@ -38,33 +51,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
