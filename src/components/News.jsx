@@ -164,7 +164,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-5">
-        <h2 className="text-center text-white my-5">Top Headlines</h2>
+        <h1 className="text-center text-white my-5" style={{ fontWeight:"bold"}}>Top Headlines of India</h1>
         {this.state.loading && <Spinner />}
         <div className="row" style={{ rowGap: "50px" }}>
           {!this.state.loading &&
@@ -192,10 +192,10 @@ export class News extends Component {
           <button
             disabled={this.state.page <= 1}
             type="button"
-            className="btn btn-success"
+            className="btn btn-light rounded-circle fs-4"
             onClick={this.handlePrevClick}
           >
-            &larr; Previous
+            &larr;
           </button>
           <button
             disabled={
@@ -203,10 +203,10 @@ export class News extends Component {
               Math.ceil(this.state.totalResults / this.props.pageSize)
             }
             type="button"
-            className="btn btn-success"
+            className="btn btn-light rounded-circle fs-4"
             onClick={this.handleNextClick}
           >
-            Next &rarr;
+            &rarr;
           </button>
         </div>
       </div>
