@@ -29,14 +29,14 @@ export class NewsItem extends Component {
             <p className="card-text" style={{ fontSize: "0.85rem" }}>
               {description}....
             </p>
-            <p class="card-text">
-              <small class="text-warning" style={{ fontSize: "0.85rem" }}>
+            <p className="card-text">
+              <small className="text-warning" style={{ fontSize: "0.85rem" }}>
                 By {author ? author : "Unknown"} on{" "}
                 {new Date(publishedAt).toGMTString()}
               </small>
             </p>
-            <p class="card-text" style={{ fontSize: "0.85rem" }}>
-              <small class="text-warning">Source: {source}</small>
+            <p className="card-text" style={{ fontSize: "0.85rem" }}>
+              <small className="text-warning">Source: {source}</small>
             </p>
             <a
               href={newsUrl}
