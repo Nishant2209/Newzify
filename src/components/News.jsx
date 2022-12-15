@@ -37,15 +37,15 @@ const News = (props) => {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container">
       <h1
-        className="text-center text-white my-5"
-        style={{ fontWeight: "bold" }}
+        className={`text-center text-${props.mode === "dark"? "white": "black"}`}
+        style={{ fontWeight: "bold", marginTop: "120px"}}
       >
         Top Headlines of India
       </h1>
       {loading && <Spinner />}
-      <div className="row" style={{ rowGap: "50px" }}>
+      <div className="row" style={{ rowGap: "50px", marginTop: "75px" }}>
         {!loading &&
           articles?.map((element) => {
             return (
@@ -60,6 +60,7 @@ const News = (props) => {
                   author={element.author}
                   publishedAt={element.publishedAt}
                   source={element.source.name}
+                  mode={props.mode}
                 />
               </div>
             );
@@ -69,7 +70,7 @@ const News = (props) => {
         <button
           disabled={page <= 1}
           type="button"
-          className="btn btn-light rounded-circle fs-4"
+          className={`btn btn-${props.mode === "dark"? "light": "dark"} rounded-circle fs-4`}
           onClick={handlePrevClick}
         >
           &larr;
@@ -77,7 +78,7 @@ const News = (props) => {
         <button
           disabled={page + 1 > Math.ceil(totalResults / props.pageSize)}
           type="button"
-          className="btn btn-light rounded-circle fs-4"
+          className={`btn btn-${props.mode === "dark"? "light": "dark"} rounded-circle fs-4`}
           onClick={handleNextClick}
         >
           &rarr;

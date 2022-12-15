@@ -6,7 +6,9 @@ const NewsItem = (props) => {
   return (
     <div className="d-flex justify-content-center">
       <div
-        className="card bg-black text-white"
+        className={`card bg-${props.mode === "dark" ? "black" : "white"} text-${
+          props.mode === "dark" ? "white" : "black"
+        }`}
         style={{ height: "33rem", width: "20rem" }}
       >
         <img
@@ -42,7 +44,9 @@ const NewsItem = (props) => {
             href={newsUrl}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-sm btn-light"
+            className={`btn btn-sm btn-${
+              props.mode === "dark" ? "light" : "dark"
+            } text-${props.mode === "dark" ? "black" : "white"}`}
           >
             Read More
           </a>
