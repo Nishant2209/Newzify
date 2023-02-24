@@ -39,8 +39,10 @@ const News = (props) => {
   return (
     <div className="container">
       <h1
-        className={`text-center text-${props.mode === "dark"? "white": "black"}`}
-        style={{ fontWeight: "bold", marginTop: "120px"}}
+        className={`text-center text-${
+          props.mode === "dark" ? "white" : "black"
+        }`}
+        style={{ fontWeight: "bold", marginTop: "120px" }}
       >
         Top Headlines of India
       </h1>
@@ -70,7 +72,9 @@ const News = (props) => {
         <button
           disabled={page <= 1}
           type="button"
-          className={`btn btn-${props.mode === "dark"? "light": "dark"} rounded-circle fs-4`}
+          className={`btn btn-${
+            props.mode === "dark" ? "light" : "dark"
+          } rounded-circle fs-4`}
           onClick={handlePrevClick}
         >
           &larr;
@@ -78,7 +82,9 @@ const News = (props) => {
         <button
           disabled={page + 1 > Math.ceil(totalResults / props.pageSize)}
           type="button"
-          className={`btn btn-${props.mode === "dark"? "light": "dark"} rounded-circle fs-4`}
+          className={`btn btn-${
+            props.mode === "dark" ? "light" : "dark"
+          } rounded-circle fs-4`}
           onClick={handleNextClick}
         >
           &rarr;
